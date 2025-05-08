@@ -13,16 +13,17 @@ function calculate() {
   const dividend = parseInt(document.getElementById("value-1").value);
   const divisor = parseInt(document.getElementById("value-2").value);
 
-  // process
   let remainder = dividend;
   let quotient = 0;
-
-  while (remainder >= divisor) {
-    remainder -= divisor;
-    quotient++;
+  // process
+  if (dividend > 0 && divisor > 0) {
+    for (; remainder >= divisor; quotient++) {
+      remainder -= divisor;
+    }
   }
 
   // output
   document.getElementById("result").innerText = 
     `Quotient: ${quotient}, Remainder: ${remainder}`;
 }
+
