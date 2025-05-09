@@ -19,11 +19,7 @@ function calculate() {
   if (dividend > 0 && divisor > 0) {
     for (; remainder >= divisor; quotient++) {
       remainder -= divisor;
-    }create a program, using a loop and an if statement, that:
-
-    it does long division on 2 positive integers, while simplified long division
-    
-    keep subtracting until the number you are left with is smaller that the number you are dividing by and then break and show the remainder
+    }
   }
 
   // output
